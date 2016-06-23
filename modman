@@ -1,0 +1,4 @@
+src/app/code/community/Canalweb/CookieBar                  app/code/community/Canalweb/CookieBar                 
+src/app/design/frontend/base/default/layout/cookie_bar.xml app/design/frontend/base/default/layout/cookie_bar.xml
+src/app/design/frontend/base/default/template/cookiebar    app/design/frontend/base/default/template/cookiebar   
+src/app/etc/modules/Canalweb_CookieBar.xml                 app/etc/modules/Canalweb_CookieBar.xml                

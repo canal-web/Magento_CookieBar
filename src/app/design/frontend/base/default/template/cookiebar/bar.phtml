@@ -1,0 +1,21 @@
+<?php if(Mage::getStoreConfig('cw_cookiebar/cookieconfig/activation') && !isset($_COOKIE['cookiebar'])): ?>
+    <?php $position = Mage::getStoreConfig('cw_cookiebar/cookieconfig/position'); ?>
+    <div class="cookie_bar <?php echo $position ?>">
+        <div class="container">
+            <div class="text">
+                <?php echo Mage::getStoreConfig('cw_cookiebar/cookieconfig/texte_barre') ?>
+            </div>
+            <div class="btn">
+                <button type="button" class="button_cookie" name="button_cookie"><?php echo Mage::getStoreConfig('cw_cookiebar/cookieconfig/texte_btn') ?></button>
+            </div>
+        </div>
+    </div>
+    <?php  setcookie('cookiebar', '1', strtotime("+1 year")); ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('.button_cookie').click(function(){
+                $('.cookie_bar').css('transform', 'translateY(100%)');
+            });
+        });
+    </script>
+<?php endif;

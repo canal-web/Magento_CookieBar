@@ -1,0 +1,8 @@
+<config>
+  <modules>
+    <Canalweb_CookieBar>
+      <active>true</active>
+      <codePool>community</codePool>
+  </Canalweb_CookieBar>
+  </modules>
+</config>
